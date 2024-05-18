@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Hassan Tariq</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Hassan Tariq</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Hassan Tariq</h1>
+        <p class="section__text__p2">Digital Marketing Analyst</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Hassan_CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/hassan-tariq-5a672624a'"
+          />
+          <img
+            src="./assets/icons8-gmail-240.png"
+            alt="Gmmail"
+            class="icon"
+            onclick="location.href='Ihassantariq98@gmail.com'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <!-- <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div> -->
+        <div class="about-details-container">
+          <div class="about-containers-row">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>07+ Months <br /><h5>Digital Advisor, UBL Bank</h5>Jan 2023 - July 2023</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>07+ Months <br /><h5>Marketing Assistant, Sadiqeen Group</h5>April 2022 - Dec 2022</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <h5>Bachelor’s in Media Studies</h5><p>Bahria University Islamabad</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+             With a Bachelor’s in Media Studies from Bahria University Islamabad
+             and a strong background in computer science, I bring a blend of 
+             technical expertise and creative flair to the table. 
+             My skill set includes keyword research, link building, and on-page SEO, 
+             complemented by proficiency in Adobe Creative Suite for graphic info design 
+             and content creation. Passionate about photography, videography, and advertising,
+              I continuously strive to create engaging and visually compelling digital media content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers-row">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Digital Marketing</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Keyword Research</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Graphic Info Design</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>On-Page SEO</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Link Building</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe Creative Suite</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Editing and Proofreading</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Social Media Marketing</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe Illustrator</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe Photoshop</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Google Keyword Planner</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Moz Link Explorer</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article> 
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Canva</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article> 
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe InDesign</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers-column">
+          <div class="row">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-11.png"
+                  alt="Project 1"
+                  class="project-img"
+                  onclick="openModal('./assets/project-11.png')"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project One</h2>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-12.png"
+                  alt="Project 2"
+                  class="project-img"
+                  onclick="openModal('./assets/project-12.png')"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Two</h2>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-3.png"
+                  alt="Project 3"
+                  class="project-img"
+                  onclick="openModal('./assets/project-3.png')"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Three</h2>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-4.png"
+                  alt="Project 4"
+                  class="project-img"
+                  onclick="openModal('./assets/project-4.jpg')"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Four</h2>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-5.png"
+                  alt="Project 5"
+                  class="project-img"
+                  onclick="openModal('./assets/project-5.png')"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Five</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-6.png"
+                  alt="Project 6"
+                  class="project-img"
+                  onclick="openModal('./assets/project-6.png')"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Six</h2>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-7.png"
+                  alt="Project 7"
+                  class="project-img"
+                  onclick="openModal('./assets/project-7.png')"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Seven</h2>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-8.png"
+                  alt="Project 8"
+                  class="project-img"
+                  onclick="openModal('./assets/project-8.png')"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Eight</h2>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-9.png"
+                  alt="Project 9"
+                  class="project-img"
+                  onclick="openModal('./assets/project-9.png')"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Nine</h2>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-10.png"
+                  alt="Project 10"
+                  class="project-img"
+                  onclick="openModal('./assets/project-10.png')"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Ten</h2>
+            </div>
+          </div>
+    
+          <!-- Video Section -->
+          <div class="row">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <video controls class="project-video">
+                  <source src="./assets/Hassan_video.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <h2 class="experience-sub-title project-title">Student Life</h2>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <!-- <video controls class="project-video">
+                  <source src="./assets/Hassan_video.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video> -->
+              </div>
+              <!-- <h2 class="experience-sub-title project-title">Video Two</h2> -->
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <!-- <video controls class="project-video">
+                  <source src="./assets/video-3.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video> -->
+              </div>
+              <!-- <h2 class="experience-sub-title project-title">Video Three</h2> -->
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <!-- <video controls class="project-video">
+                  <source src="./assets/video-4.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video> -->
+              </div>
+              <!-- <h2 class="experience-sub-title project-title">Video Four</h2> -->
+            </div>
+            <!-- <div class="details-container color-container">
+              <div class="article-container">
+                <video controls class="project-video">
+                  <source src="./assets/video-5.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <h2 class="experience-sub-title project-title">Video Five</h2>
+            </div> -->
+          </div>
+    
+          <!-- Video Links Section -->
+          <div class="row">
+            <div class="details-container color-container">
+              <h2 class="experience-sub-title project-title">Video/Reels Links</h2>
+              <div class="article-container">
+                <a href="https://www.instagram.com/reel/CjDT7sygMGn/?igsh=NndpZXZ0NmtyYWl3" target="_blank" class="video-link">Reel One</a>
+                <a href="https://www.instagram.com/reel/CiIWTnNgjZx/?igsh=MTVtc3F2a2l1NXo0Zg==" target="_blank" class="video-link">Reel Two</a>
+                <a href="https://www.instagram.com/reel/ChiDtQJgjBW/?igsh=MWx2bnAza25vNDVwMA==" target="_blank" class="video-link">Reel Three</a>
+                <a href="https://drive.google.com/file/d/1uGT2aZEE7SGi3rp2tir8IOlFlS23KCtY/view?usp=drivesdk" target="_blank" class="video-link">Video Link</a>
+                <a href="https://drive.google.com/file/d/1gDe3AFVeJUAqCM99oRl9VV_In-ZkP5zw/view?usp=drivesdk" target="_blank" class="video-link">Video Link</a>
+                <a href="https://drive.google.com/file/d/1F13wThV_cPk0vVO4_6Lw9wjIRZm5zJ0a/view?usp=drivesdk" target="_blank" class="video-link">Video Link</a>
+              
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+    
+    <!-- Modal Structure -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
+    
+     
+ 
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Ihassantariq98@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://linkedin.com/in/hassan-tariq-5a672624a">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/arrow.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>+92-311-5495345</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
